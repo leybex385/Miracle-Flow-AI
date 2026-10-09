@@ -112,15 +112,11 @@ body {
     color: var(--color-text-primary);
 }
 
-.logo-icon {
-    width: 20px;
-    height: 20px;
-    background: white; /* Default transparent state */
-    transition: background var(--transition-smooth);
-}
-
-.navbar.scrolled .logo-icon {
-    background: var(--color-accent);
+.logo-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
 .nav-links {
