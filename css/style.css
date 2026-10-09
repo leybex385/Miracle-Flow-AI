@@ -260,6 +260,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
+    pointer-events: none;
 }
 
 .hero-video {
@@ -278,6 +279,7 @@ body {
     height: 100%;
     background: linear-gradient(to right, var(--color-bg-dark) 0%, rgba(2, 44, 34, 0.8) 40%, rgba(16, 185, 129, 0.2) 100%);
     z-index: 2;
+    pointer-events: none;
 }
 
 .hero-content {
@@ -1167,11 +1169,18 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 25%;
+    left: 0;
     right: 0;
     background: var(--grad-navy-teal);
-    border-radius: 40px 0 0 40px;
+    border-radius: 0;
     z-index: 0;
+}
+
+@media (min-width: 992px) {
+    .frank-bg-panel {
+        left: 25%;
+        border-radius: 40px 0 0 40px;
+    }
 }
 
 .frank-watermark {
