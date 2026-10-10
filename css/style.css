@@ -409,8 +409,10 @@ body {
 
 @media (max-width: 991px) {
     .vision-bg-panel {
-        left: 10%;
+        left: -10vw;
+        right: -10vw;
         top: 20rem;
+        border-radius: 0;
     }
 }
 
